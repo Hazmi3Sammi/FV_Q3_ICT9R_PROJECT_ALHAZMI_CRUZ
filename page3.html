@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Q3PROJECT</title>
+    <style>
+          body {
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/954/434/small_2x/abstract-pink-pastel-soft-and-smooth-gradient-studio-background-rose-gold-color-background-light-pink-gradient-background-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 100vh;
+            font-family: fantasy;
+        }
+      
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            margin: 0 15px;
+        }
+        .ticket-image {
+            width: 100%;
+            max-width: 490px;
+            margin: 20px 0;
+                 }
+        .btn-dark-pink {
+            background-color: #D5006D; 
+            color: white;
+            border-radius: 25px;
+        }
+        .train-ticket{
+            width: 20px;
+            height: 10px;
+        }
+          .container1 {
+            text-align: center;
+            margin: 90px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1000px;
+            position: relative; 
+            top: 10px;
+        }
+
+        .footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            border-top: 1px solid #D5006D;
+            padding: 5px;
+ 
+        }
+        .d-flex .form-control {
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://media.discordapp.net/attachments/1273559715988901968/1346469802285203587/7950cbcba8ef02cfc9321bdeb5a8d1f8-train-retro-transport.png?ex=67c8f5f9&is=67c7a479&hm=2354d7c2bc00cd0ea28f4bff0eb4534814f93af24d357bfeb1c410e8d6d294cc&=&format=webp&quality=lossless&width=640&height=640" alt="Logo" style="width: 40px; height: 40px;" href="index.html">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control" type="text" placeholder="Search...">
+                <button class="btn btn-dark-pink" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<br><br><br>
+<div class="container1">
+    <form class="form-group">
+         <div class="row">
+             <div class="col-md-12">
+<center><h1 style="font-family: Courier New ;color:  white; background-color: lightpink;">Feedback Form</h1></center>
+<p>Leave us a comment! We appreciate hearing your thoughts and comments:</p>
+<br>
+                        <textarea rows="4" cols="78" placeholder="Type your comment/s here..."></textarea>
+<br>
+                        <label for="name">Name:</label>
+                        <br>
+                        <input type="text" class="form-control" placeholder="What can we call you?">
+<br>
+
+                        <label for="number">Phone Number:</label>
+                        <br>
+                        <input type="text" class="form-control" placeholder="How can we contact you?">
+<br>
+                        <label for="email">Email Adress:</label>
+                        <br>
+                        <input type="text" class="form-control" placeholder="Where can we E-mail you?">
+<br><br>
+
+<button type="Submit" class="btn btn-dark-pink" onclick="submitFeedback()">Submit feedback!</button><br>
+
+<br>
+
+<p>For more assistance, contact us<br><i>metromnltrain@gmail.com<br>+63 9786 543 2108<br></i><a href="https://www.google.com/maps/place/Office+of+the+General+Manager+-+DOTC+MRT3/@14.652932,121.0311843,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b6fd62fa7d2f:0x9ede556b62c7daad!8m2!3d14.652932!4d121.033373?coh=164777&entry=tt&shorturl=1">EDSA Corner North Avenue</a></p>
+</div>
+</div>
+</form>
+</div>
+
+<script>
+    function submitFeedback(){
+     window.alert("Your feeback has been submitted and will be read and taken into consideration by our team. Thank you!");
+}
+</script>
+<footer class="footer">
+    <p>&copy; 2023 Metro Manila Train</p>
+</footer>
+
+
+</body>
+</html>
