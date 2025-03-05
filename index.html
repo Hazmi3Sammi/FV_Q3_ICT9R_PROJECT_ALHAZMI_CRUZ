@@ -11,7 +11,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            font-family: Fantasy;
+            font-family: monospace;
             margin: 0;
             padding: 0;
         }
@@ -27,7 +27,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            opacity: 0.5; 
+            opacity: 0.2; 
             z-index: -1; 
         }
 
@@ -40,7 +40,7 @@
             margin: auto;
             box-shadow: 2px 2px 10px rgba(5, 4, 4, 0.8);
             position: relative;
-            top: 50px;
+            top: 10px;
             border-radius: 10px;
             width: 400px;
         }
@@ -81,7 +81,7 @@
             border-radius: 10px;
         }
 
-        .footer {
+       .footer {
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 10px;
@@ -90,8 +90,6 @@
             border-top: 1px solid #D5006D;
             padding: 5px;
         }
-
-        
         .d-flex .form-control {
             margin-right: 10px; 
         }
@@ -123,6 +121,7 @@
         </div>
     </div>
 </nav>
+<br><br><br>
 
 <div class="container">
     <h1 class="text-center">Metro Manila Train</h1>
@@ -153,8 +152,8 @@
             <option value="0">N/A</option>
         </select>
 
-        <button type="button" class="btn btn-warning" onclick="showOriginalPrice()">Show Original Price</button>
-        <button type="button" class="btn btn-warning" onclick="showDiscountedPrice()">Show Discounted Price</button>
+        <button type="button" class="btn btn-warning" onclick="showOriginalPrice()">Original Price</button>
+        <button type="button" class="btn btn-warning" onclick="showDiscountedPrice()">Discounted Price</button>
     </form>
 
     <!-- Container for the image below the form -->
@@ -162,7 +161,7 @@
         <img src="https://mrt3.com/images/SINGLE.png" class="train-ticket" alt="Train Ticket">
     </div>
 </div>
-
+<br><br><br>
 <script>
     function showOriginalPrice() {
         const seatPrice = parseFloat(document.getElementById("seat").value);
